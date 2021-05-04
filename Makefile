@@ -10,7 +10,8 @@ SRCS		=	srcs/main.c	\
 				srcs/copyenv.c	\
 				srcs/mystrcpy.c	\
 				srcs/myputstr.c	\
-				srcs/wordarray.c
+				srcs/wordarray.c	\
+				srcs/printenv.c
 
 OBJS		=	$(SRCS:.c=.o)
 

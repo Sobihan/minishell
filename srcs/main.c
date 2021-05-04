@@ -6,11 +6,15 @@ env_t *copy_env(char **env);
 void myputstr(char *str);
 char **wordarray(char *str, char separator);
 int mystrcmp(char *str, char *str1);
+void printenv(env_t *envp);
+int mystrlen(char *str);
 
 void parser(env_t *envp, char **input)
 {
     if (mystrcmp(input[0], "exit"))
         exit(0);
+    if (mystrcmp(input[0], "env"))
+        printenv(envp);
     /*TODO: env, setenv*/
 }
 
