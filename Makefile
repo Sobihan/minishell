@@ -6,7 +6,11 @@ NAME		=	mysh
 
 SRCS		=	srcs/main.c	\
 				srcs/mystrlen.c	\
-				srcs/mystrcmp.c
+				srcs/mystrcmp.c	\
+				srcs/copyenv.c	\
+				srcs/mystrcpy.c	\
+				srcs/myputstr.c	\
+				srcs/wordarray.c
 
 OBJS		=	$(SRCS:.c=.o)
 
