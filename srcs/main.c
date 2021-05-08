@@ -8,6 +8,7 @@ char **wordarray(char *str, char separator);
 int mystrcmp(char *str, char *str1);
 void printenv(env_t *envp);
 int mystrlen(char *str);
+void mysetenv(char **input, env_t *envp);
 
 void parser(env_t *envp, char **input)
 {
@@ -15,6 +16,8 @@ void parser(env_t *envp, char **input)
         exit(0);
     if (mystrcmp(input[0], "env"))
         printenv(envp);
+    if (mystrcmp(input[0], "setenv"))
+       mysetenv(input, envp);
     /*TODO: env, setenv*/
 }
 
